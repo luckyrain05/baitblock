@@ -149,8 +149,3 @@ The project consists of three main components:
 │  - Applies red outline styling to phishing messages         │
 └─────────────────────────────────────────────────────────────┘
 ```
-
-## Known Limitations and Future Steps
-
-- The model used has a high false positive rate since it was trained on traditional phishing vectors, not livestream chat messages. I manually required a confidence threshold of 0.999997 in `server/bert_label.py` for the model to label a message.
-- Currently collected ~55k messages from a variety of channels and time frames. Working on collecting more data and annotations to train my own classification model from BERT.
